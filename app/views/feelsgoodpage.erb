@@ -1,0 +1,19 @@
+<img class="yes" src="http://www.positivepsychologyandhappiness.com/wp-content/uploads/2011/12/feelsgoodman.jpg" style="display: none;">
+<div class="find_out">
+  You've been authenticated!  How does it feel? Click here to find out!
+</div>
+<hr>
+<a href="/logout">Logout</a>
+
+<script>
+  $(document).ready( function() {
+    $('.find_out').click(function() {
+      $('.yes').show();
+      $(this).hide();
+    });
+    $('.yes').click(function() {
+      $('.find_out').show();
+      $(this).hide();
+    });
+  });
+</script>

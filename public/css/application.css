@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6 {
+  padding:0;
+  margin:0;
+}
+.container {
+  background: purple;
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  font-family: cursive;
+  text-align: center;
+  border-radius: 20px;
+}
+a {
+  color: salmon;
+}
+a:visited {
+  color: chartreuse;
+}
+a:hover {
+  color: cyan;
+}
+th {
+  text-align: left;
+}
+h1 {
+  color: gold;
+  text-shadow: 1px 1px 10px pink;
+}
+form {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form input {
+  text-align: center;
+  background: deepskyblue;
+  width: 400px;
+  margin-top: 10px;
+  color: gold;
+  border-radius: 5px;
+  border: none;
+  font-size: x-large;
+  transition: all 1s ease;
+}
+input[type="submit"] {
+  background: mediumaquamarine;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transition: all .25s ease;
+}
+input[type="submit"]:Hover {
+  background: lightseagreen;
+  box-shadow: inset 0px 0px 10px black;
+  transition: all .25s ease;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgba(255,215,0,0.5);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgba(255,215,0,0.5);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgba(255,215,0,0.5);
+}
