@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   include BCrypt
   validates :email, :presence => true, :format => { :with => /\w+@\w+.\w+/ }
   validates :password, :confirmation => true
+  has_many :urls
 
   def password
     @password ||= Password.new(hashed_password)

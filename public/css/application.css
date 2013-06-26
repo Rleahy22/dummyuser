@@ -63,3 +63,12 @@ input[type="submit"]:Hover {
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     color:    rgba(255,215,0,0.5);
 }
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+table th {
+  text-align: center;
+}

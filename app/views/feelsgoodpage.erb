@@ -17,3 +17,34 @@
     });
   });
 </script>
+
+<div class="container">
+  <% if @url.errors.any? %>
+    <% @url.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+  <% end %>
+  <% if @new_url %>
+    localhost:6969/<%= @new_url %>
+  <% end %>
+  <h2>Give me a url and I will shorten it for you breh!!</h2>
+  <form action="/urls" method="post">
+    <label for="long_url">Enter a url chere:</label>
+    <input type="text" name="long_url">
+    <input type="submit">
+  </form>
+  <table>
+    <tr>
+    <th>Link</th>
+    <th>Full Path</th>
+    </tr>
+    <% @user.urls.each do |url| %>
+      <tr>
+        <td><a href="/<%= url.short_url %>">
+          localhost:port/<%= url.short_url %>
+        </a></td>
+        <td><%= url.long_url %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
